@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  height: 100vh;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.root {
+  position: relative;
+  display: inline-block;
+}
+.root .shadow {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.root .shadow .shadow-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.root .shadow:hover {
+  cursor: pointer;
+}
+
+table {
+  font-size: 0;
+  border-collapse: collapse;
+  border: 1px solid #000;
+}
+table td {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+table td.head {
+  background-color: red;
+}
+table td.fill {
+  background-color: black;
+}
+table td.empty {
+  background-color: white;
+}
+table td.food {
+  background-color: green;
+}

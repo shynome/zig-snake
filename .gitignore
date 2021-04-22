@@ -1,0 +1,4 @@
+zig-cache/
+node_modules/
+docs/wasm/
+*.wasm
