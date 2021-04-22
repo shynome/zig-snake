@@ -9,7 +9,7 @@ pub fn build(b: *std.build.Builder) void {
     const lib = b.addStaticLibrary("snake", "src/snake_web.zig");
     lib.setBuildMode(mode);
     lib.setTarget(target);
-    lib.setOutputDir("output/wasm");
+    lib.setOutputDir("docs/wasm");
     lib.install();
 
     var main_tests = b.addTest("src/snake.zig");
